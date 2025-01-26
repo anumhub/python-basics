@@ -1,2 +1,2 @@
 # Python
-This repository is pythons basics 
+This repository contains all my python files  covering  basics 
