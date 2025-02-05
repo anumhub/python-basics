@@ -108,3 +108,12 @@ hobby=input("hobby: ")
 
 print("Hi, My name is : ",yourname, "I am ",agee, "years old", "My hobby is", hobby)
 
+#type casting
+p1=int("2")
+p2= 4.35
+print(p1 + p2) # 6.35
+
+# example 2
+p3= 3.14
+p3=str(p3)
+print(type(p3))  # str
