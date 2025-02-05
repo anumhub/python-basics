@@ -49,10 +49,57 @@ print(stringf.count("a"))  # 2
 # write a program to input user first name and print its length
 
 firstname= input(("enter the firstname: "))
-print(firstname)
-print(len(firstname))
+print(firstname)  # sam
+print(len(firstname))  #3
 
 # write a program to find the occurence of '$' ina  string
 word_occurance= "Hi, $Iam the $ symbol $10.00"
-print(word_occurance.count("$"))
+print(word_occurance.count("$")) # 3
 
+#--------------------------Conditional Statements -----------------
+"""
+syntax
+if-elif-else
+"""
+
+# if statement example
+age =21
+if age > 18:
+    print("can't vote")
+
+# elif and else statement example
+
+light=("blue")
+if(light == "red"):
+    print("stop")
+elif(light == "green"):
+    print("go")
+elif(light == "yellow"):
+    print("look")
+else:
+    print("light is broken")
+print("end of the code")
+
+# another example
+
+marks=74
+# marks= int(input("enter the marks:"))
+if(marks >= 90):
+    grade ="A"
+elif(marks >= 80 and marks < 90):
+    grade="B"
+elif(marks >= 70 and marks < 80):
+    grade="C"
+else:
+    grade= "D"
+print("grade of the student ->",grade)
+
+#nesting - statements in another statment
+age =34
+if(age  >= 18):
+    if(age >=80):
+        print("cannot drive")
+    else:
+        print("can drive")
+else:
+    print("can't drive ")
