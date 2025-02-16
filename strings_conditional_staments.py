@@ -103,3 +103,34 @@ if(age  >= 18):
         print("can drive")
 else:
     print("can't drive ")
+
+
+#WAP to check number is even or odd
+
+num=14
+rem=num%2
+if(rem == 0):
+    print("number is even")
+else:
+    print("number id odd")
+
+#WAP to check number is multiple of 7
+
+num=14
+rem=num%7
+if(rem == 0):
+    print("number is multiple of 7")
+else:
+    print("number ids not multiple of 7 ")
+
+# WAP to find greastest of 3 numbers entered by user
+
+a=4
+b=5
+c=7
+if(a>b and a>c):
+    print("first number is greatest")
+elif(b>c):
+    print("second is grestest")
+else:
+    print("third is greatest")
