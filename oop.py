@@ -27,7 +27,7 @@ s1=student() # parenthesis is used to call constructor
 print(s1.name)
 
 class CollegeStudent:
-    college_name="ABC college"
+    college_name="ABC college"  # class attribute
     name="anonymous" #class attribute
 
     @staticmethod
@@ -43,8 +43,20 @@ class CollegeStudent:
     def get_marks(self):
         return self.marks
 
-    # absctraction- hiding the implementaion details of a class and only showing essential features to the user
-    # encapsulation - wrapping data and functions into a single unit(object)
+stu1 = CollegeStudent("Mona", 98)
+print(stu1.name, stu1.marks)
+stu2 = CollegeStudent("Helen", 77)
+print(stu2.name, stu1.marks)
+print(stu2.college_name)
+stu1.welcome()
+print(stu1.get_marks())  # return the value - marks
+# methods
+# methods are functions that belong to objects
+
+
+# Absctraction- hiding the implementaion details of a class and only showing essential features
+# to the user
+# Encapsulation - wrapping data and functions into a single unit(object)
 
 class Car:
         def __init__(self):
@@ -57,12 +69,15 @@ class Car:
             print("car started")
 car1=Car()
 car1.start()
-stu1=CollegeStudent("Mona",98)
-print(stu1.name,stu1.marks)
-stu2=CollegeStudent("Helen",77)
-print(stu2.name,stu1.marks)
-print(stu2.college_name)
-stu1.welcome()
-print(stu1.get_marks())
-# methods
-# methods are functions that belong to objects
+
+
+
+
+
+"""
+class attribute - when value is stored 1 time ( common in objects for example - college name = ABC
+object or instance attribute - stroing value for different objects ( student 1, student 2)
+
+object attribute preference is more than class attribute 
+
+"""
